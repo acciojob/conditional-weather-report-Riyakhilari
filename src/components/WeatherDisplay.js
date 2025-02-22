@@ -1,3 +1,4 @@
+// WeatherDisplay.js
 import React from "react";
 
 const WeatherDisplay = ({ weather }) => {
@@ -5,9 +6,10 @@ const WeatherDisplay = ({ weather }) => {
 
   return (
     <div>
-      <p style={{ color: tempColor }}>Temperature: {weather.temperature}</p>
+      <p>
+        Temperature: <span style={{ color: tempColor }}>{weather.temperature}</span>
+      </p>
       <p>Conditions: {weather.conditions}</p>
-      <span>Weather Info</span>
     </div>
   );
 };
